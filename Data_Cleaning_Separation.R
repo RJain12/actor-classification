@@ -286,3 +286,11 @@ demographics_table[27, 4] <- percentage_notheard
 
 write.csv(demographics_table, file = "tables/demographics_table.csv", row.names = FALSE)
 
+renamed_columns_data <- original_survey_data
+
+renamed_columns_data <- renamed_columns_data %>%
+  rename_at(vars(matches("^X1")), ~ paste0("AI", substring(., 3)))
+
+renamed_columns_data <- renamed_columns_data %>%
+  rename_at(vars(matches("^X0")), ~ paste0("Human", substring(., 3)))
+
