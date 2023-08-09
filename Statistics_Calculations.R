@@ -4,6 +4,7 @@ library(tidyr)
 library(markdown)
 library(pROC)
 library(ggplot2)
+library(stats)
 
 # Count the number of responses with AI -> AI
 ai_correct_count <- 0
@@ -91,6 +92,7 @@ AI_Human_ConfusionMatrix_Percentage <- data.frame(
 
 write.csv(AI_Human_ConfusionMatrix_Percentage, file = "tables/AI_Human_ConfusionMatrix_Percentage.csv", row.names = TRUE)
 
+# Isolating for AI Experience & Contingency Table 
 
 ai_selected_columns <- renamed_columns_data[, grepl("^AI", names(renamed_columns_data))]
 ai_selected_columns_csv <- paste(names(ai_selected_columns), collapse = ",")
@@ -120,56 +122,39 @@ heard_human_all_count <- sum(rowSums(renamed_columns_data[heard_rows, ] == "Huma
 notheard_human_all_count <- sum(rowSums(renamed_columns_data[notheard_rows, ] == "Human", na.rm = TRUE))
 
 
-thorough_ai_correct_count <- sum(rowSums(renamed_columns_data[thorough_rows, !(names(renamed_columns_data) %in% unlist(strsplit(ai_selected_columns_csv, ","))) ] == "AI", na.rm = TRUE))
-rough_ai_correct_count <- sum(rowSums(renamed_columns_data[rough_rows, !(names(renamed_columns_data) %in% unlist(strsplit(ai_selected_columns_csv, ","))) ] == "AI", na.rm = TRUE))
-lack_ai_correct_count <- sum(rowSums(renamed_columns_data[lack_rows, !(names(renamed_columns_data) %in% unlist(strsplit(ai_selected_columns_csv, ","))) ] == "AI", na.rm = TRUE))
-heard_ai_correct_count <- sum(rowSums(renamed_columns_data[heard_rows, !(names(renamed_columns_data) %in% unlist(strsplit(ai_selected_columns_csv, ","))) ] == "AI", na.rm = TRUE))
-notheard_ai_correct_count <- sum(rowSums(renamed_columns_data[notheard_rows, !(names(renamed_columns_data) %in% unlist(strsplit(ai_selected_columns_csv, ","))) ] == "AI", na.rm = TRUE))
+ai_selected_columns <- strsplit(ai_selected_columns_csv, ",")[[1]]
 
+thorough_ai_correct_count <- sum(rowSums(renamed_columns_data[thorough_rows, ai_selected_columns] == "AI", na.rm = TRUE))
+rough_ai_correct_count <- sum(rowSums(renamed_columns_data[rough_rows, ai_selected_columns] == "AI", na.rm = TRUE))
+lack_ai_correct_count <- sum(rowSums(renamed_columns_data[lack_rows, ai_selected_columns] == "AI", na.rm = TRUE))
+heard_ai_correct_count <- sum(rowSums(renamed_columns_data[heard_rows, ai_selected_columns] == "AI", na.rm = TRUE))
+notheard_ai_correct_count <- sum(rowSums(renamed_columns_data[notheard_rows, ai_selected_columns] == "AI", na.rm = TRUE))
+
+
+human_selected_columns <- strsplit(human_selected_columns_csv, ",")[[1]]
+
+thorough_human_correct_count <- sum(rowSums(renamed_columns_data[thorough_rows, human_selected_columns] == "Human", na.rm = TRUE))
+rough_human_correct_count <- sum(rowSums(renamed_columns_data[rough_rows, human_selected_columns] == "Human", na.rm = TRUE))
+lack_human_correct_count <- sum(rowSums(renamed_columns_data[lack_rows, human_selected_columns] == "Human", na.rm = TRUE))
+heard_human_correct_count <- sum(rowSums(renamed_columns_data[heard_rows, human_selected_columns] == "Human", na.rm = TRUE))
+notheard_human_correct_count <- sum(rowSums(renamed_columns_data[notheard_rows, human_selected_columns] == "Human", na.rm = TRUE))
 
 
 # Contingency Table
-ai_columns <- grep("^AI", names(renamed_columns_data))
-ai_counts <- sapply(renamed_columns_data[, ai_columns], function(col) sum(col == "AI"))
-ai_row_numbers <- which(apply(renamed_columns_data[, ai_columns], 1, function(row) any(row == "AI")))
-ai_correct_thorough <- sum(apply(renamed_columns_data[ai_row_numbers, ], 1, function(row) any(row == "I have used this, and thoroughly understand how it works")))
-human_columns <- grep("^Human", names(renamed_columns_data))
-human_counts <- sapply(renamed_columns_data[, human_columns], function(col) sum(col == "Human"))
-human_row_numbers <- which(apply(renamed_columns_data[, human_columns], 1, function(row) any(row == "Human")))
-human_correct_thorough <- sum(apply(renamed_columns_data[human_row_numbers, ], 1, function(row) any(row == "I have used this, and thoroughly understand how it works")))
-ai_correct_rough <- sum(apply(renamed_columns_data[ai_row_numbers, ], 1, function(row) any(row == "I have used this, and roughly understand how it works")))
-human_correct_rough <- sum(apply(renamed_columns_data[human_row_numbers, ], 1, function(row) any(row == "I have used this, and roughly understand how it works")))
-ai_correct_lack <- sum(apply(renamed_columns_data[ai_row_numbers, ], 1, function(row) any(row == "I have used this before, but lack an understanding of how it works")))
-human_correct_lack <- sum(apply(renamed_columns_data[human_row_numbers, ], 1, function(row) any(row == "I have used this before, but lack an understanding of how it works")))
-ai_correct_heard <- sum(apply(renamed_columns_data[ai_row_numbers, ], 1, function(row) any(row == "I have heard of this before, but have not used it")))
-human_correct_heard <- sum(apply(renamed_columns_data[human_row_numbers, ], 1, function(row) any(row == "I have heard of this before, but have not used it")))
-ai_correct_notheard <- sum(apply(renamed_columns_data[ai_row_numbers, ], 1, function(row) any(row == "I have not heard of this before")))
-human_correct_notheard <- sum(apply(renamed_columns_data[human_row_numbers, ], 1, function(row) any(row == "I have not heard of this before")))
+ai_correct_thorough_percent <- paste0(round((thorough_ai_correct_count / thorough_ai_all_count) * 100), "%")
+human_correct_thorough_percent <- paste0(round((thorough_human_correct_count / thorough_human_all_count) * 100), "%")
 
-ai_human_rows <- which(apply(renamed_columns_data, 1, function(row) any(row == "I have used this, and thoroughly understand how it works")))
-ai_human_counts <- sum(apply(renamed_columns_data[ai_human_rows, ], 1, function(row) any(row %in% c("AI", "Human"))))
-ai_correct_thorough_percent <- paste0(round((ai_correct_thorough / ai_human_counts) * 100), "%")
-human_correct_thorough_percent <- paste0(round((human_correct_thorough / ai_human_counts) * 100), "%")
+ai_correct_rough_percent <- paste0(round((rough_ai_correct_count / rough_ai_all_count) * 100), "%")
+human_correct_rough_percent <- paste0(round((rough_human_correct_count / rough_human_all_count) * 100), "%")
 
-ai_human_rows <- which(apply(renamed_columns_data, 1, function(row) any(row == "I have used this, and roughly understand how it works")))
-ai_human_counts <- sum(apply(renamed_columns_data[ai_human_rows, ], 1, function(row) any(row %in% c("AI", "Human"))))
-ai_correct_rough_percent <- paste0(round((ai_correct_rough / ai_human_counts) * 100), "%")
-human_correct_rough_percent <- paste0(round((human_correct_rough / ai_human_counts) * 100), "%")
+ai_correct_lack_percent <- paste0(round((lack_ai_correct_count / lack_ai_all_count) * 100), "%")
+human_correct_lack_percent <- paste0(round((lack_human_correct_count / lack_human_all_count) * 100), "%")
 
-ai_human_rows <- which(apply(renamed_columns_data, 1, function(row) any(row == "I have used this before, but lack an understanding of how it works")))
-ai_human_counts <- sum(apply(renamed_columns_data[ai_human_rows, ], 1, function(row) any(row %in% c("AI", "Human"))))
-ai_correct_lack_percent <- paste0(round((ai_correct_lack / ai_human_counts) * 100), "%")
-human_correct_lack_percent <- paste0(round((human_correct_lack / ai_human_counts) * 100), "%")
+ai_correct_heard_percent <- paste0(round((heard_ai_correct_count / heard_ai_all_count) * 100), "%")
+human_correct_heard_percent <- paste0(round((heard_human_correct_count / heard_human_all_count) * 100), "%")
 
-ai_human_rows <- which(apply(renamed_columns_data, 1, function(row) any(row == "I have heard of this before, but have not used it")))
-ai_human_counts <- sum(apply(renamed_columns_data[ai_human_rows, ], 1, function(row) any(row %in% c("AI", "Human"))))
-ai_correct_heard_percent <- paste0(round((ai_correct_heard / ai_human_counts) * 100), "%")
-human_correct_heard_percent <- paste0(round((human_correct_heard / ai_human_counts) * 100), "%")
-
-ai_human_rows <- which(apply(renamed_columns_data, 1, function(row) any(row == "I have not heard of this before")))
-ai_human_counts <- sum(apply(renamed_columns_data[ai_human_rows, ], 1, function(row) any(row %in% c("AI", "Human"))))
-ai_correct_notheard_percent <- paste0(round((ai_correct_notheard / ai_human_counts) * 100), "%")
-human_correct_notheard_percent <- paste0(round((human_correct_notheard / ai_human_counts) * 100), "%")
+# ai_correct_notheard_percent <- paste0(round((notheard_ai_correct_count / notheard_ai_all_count) * 100), "%")
+# human_correct_notheard_percent <- paste0(round((notheard_human_correct_count / notheard_human_all_count) * 100), "%")
 
 
 contingency_table_percent <- data.frame(
@@ -178,10 +163,90 @@ contingency_table_percent <- data.frame(
   Human_Correct = c(human_correct_thorough_percent, human_correct_rough_percent, human_correct_lack_percent, human_correct_heard_percent, human_correct_notheard_percent)
 )
 
-ggplot(contingency_table_percent, aes(x = Experience, y = AI_Correct, fill = Experience)) +
+contingency_table_numerical <- data.frame(
+  Experience = c("Used & Thoroughly Understand", "Used & Roughly Understand", "Used & Lack Understanding", "Heard of & Not Used"),
+  AI_Correct = c(thorough_ai_correct_count, rough_ai_correct_count, lack_ai_correct_count, heard_ai_correct_count),
+  Human_Correct = c(thorough_human_correct_count, rough_human_correct_count, lack_human_correct_count, heard_human_correct_count)
+)
+
+
+write.csv(contingency_table_percent, file = "tables/AI_Classification_Experience_Contingency_Table_Percentage.csv", row.names = TRUE)
+write.csv(contingency_table_numerical, file = "tables/AI_Classification_Experience_Contingency_Table_Numeric.csv", row.names = TRUE)
+
+
+ggplot(contingency_table_percent, aes(x = Experience, y = Human_Correct, fill = Experience)) +
   geom_bar(stat = "identity") +
-  labs(title = "Correct AI Classifications by Experience Level",
+  labs(title = "Correct AI Classifications by Experience Level (Human)",
        y = "Percentage of Correct AI Classifications",
        x = "Experience with AI") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+# Chi-Squared Test
+total_ai_correct <- sum(contingency_table_numerical$AI_Correct)
+total_human_correct <- sum(contingency_table_numerical$Human_Correct)
+total_experiences <- sum(total_ai_correct, total_human_correct)
+
+# Calculate expected frequencies
+expected_ai_correct <- (contingency_table_numerical$AI_Correct + contingency_table_numerical$Human_Correct) * total_ai_correct / total_experiences
+expected_human_correct <- (contingency_table_numerical$AI_Correct + contingency_table_numerical$Human_Correct) * total_human_correct / total_experiences
+
+# Calculate the chi-squared statistic
+chi_squared <- sum((contingency_table_numerical$AI_Correct - expected_ai_correct)^2 / expected_ai_correct) +
+  sum((contingency_table_numerical$Human_Correct - expected_human_correct)^2 / expected_human_correct)
+
+df <- (nrow(contingency_table_numerical) - 1) * (ncol(contingency_table_numerical) - 1)
+
+# Find the p-value
+p_value <- 1 - pchisq(chi_squared, df)
+
+alpha <- 0.05
+
+# Compare p-value to significance level
+if (p_value < alpha) {
+  result <- "Reject null hypothesis: There is a significant association between experience and correct classification."
+} else {
+  result <- "Fail to reject null hypothesis: No significant association between experience and correct classification."
+}
+
+# Print results
+print(paste("Chi-Squared Statistic:", chi_squared))
+print(paste("Degrees of Freedom:", df))
+print(paste("P-value:", p_value))
+print(result)
+
+# Chi Square for ONLY  heard of & thoroughly
+contingency_table_numerical_thorough_notheard <- data.frame(
+  Experience = c("Used & Thoroughly Understand", "Heard of & Not Used"),
+  AI_Correct = c(thorough_ai_correct_count, heard_ai_correct_count),
+  Human_Correct = c(thorough_human_correct_count, heard_human_correct_count)
+)
+total_ai_correct <- sum(contingency_table_numerical_thorough_notheard$AI_Correct)
+total_human_correct <- sum(contingency_table_numerical_thorough_notheard$Human_Correct)
+total_experiences <- sum(total_ai_correct, total_human_correct)
+expected_ai_correct <- (contingency_table_numerical$AI_Correct + contingency_table_numerical$Human_Correct) * total_ai_correct / total_experiences
+expected_human_correct <- (contingency_table_numerical$AI_Correct + contingency_table_numerical$Human_Correct) * total_human_correct / total_experiences
+
+chi_squared <- sum((contingency_table_numerical$AI_Correct - expected_ai_correct)^2 / expected_ai_correct) +
+  sum((contingency_table_numerical$Human_Correct - expected_human_correct)^2 / expected_human_correct)
+
+df <- (nrow(contingency_table_numerical) - 1) * (ncol(contingency_table_numerical) - 1)
+
+# Find the p-value
+p_value <- 1 - pchisq(chi_squared, df)
+
+alpha <- 0.05
+
+# Compare p-value to significance level
+if (p_value < alpha) {
+  result <- "Reject null hypothesis: There is a significant association between experience and correct classification."
+} else {
+  result <- "Fail to reject null hypothesis: No significant association between experience and correct classification."
+}
+
+# Print results
+print(paste("Chi-Squared Statistic:", chi_squared))
+print(paste("Degrees of Freedom:", df))
+print(paste("P-value:", p_value))
+print(result)
