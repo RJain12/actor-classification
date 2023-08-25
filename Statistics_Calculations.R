@@ -11,10 +11,10 @@ ai_correct_count <- 0
 
 for (i in seq_along(renamed_columns_data)) {
   if (startsWith(names(renamed_columns_data)[i], "AI")) {
-    ai_correct_count <- ai_correct_count + sum(renamed_columns_data[[i]] == "AI")
+    ai_correct_count <- ai_correct_count + sum(renamed_columns_data[[i]][as.integer(rownames(renamed_columns_data)) >= 0 & as.integer(rownames(renamed_columns_data)) <= 99] == "AI")
   }
 }
-print(ai_correct_count)
+
 
 # Count the number of incorrect responses with AI -> Human
 ai_incorrect_count <- 0
