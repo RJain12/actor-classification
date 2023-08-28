@@ -1,0 +1,339 @@
+"age","gender","education","continent","discordexperience","aiexperience","AI_input","Human_input","AI_correct","Human_correct"
+17,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",6,4,0,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",4,6,1,5
+15,"Female","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+19,"Female","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,3,3
+17,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",6,4,3,1
+16,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",5,5,2,1
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",8,2,4,0
+16,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+17,"Male","None of the above","Africa","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,0,4
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,2,2
+17,"Male","In college/undergraduate","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",9,1,5,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,5
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+16,"Male","In high school","Oceania","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",10,0,3,0
+17,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,4,0
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,5,3
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",9,1,6,1
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,4,1
+17,"Male","In college/undergraduate","Europe","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",9,1,7,0
+21,"","None of the above","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,4,2
+16,"Prefer not to say","In high school","Asia","Never used Discord.com","I have used this, and roughly understand how it works",6,4,1,3
+15,"Female","In high school","Europe","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",6,4,1,3
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,6
+17,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+14,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",7,3,4,1
+16,"Male","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",7,3,5,0
+13,"Male","In middle school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,2,1
+18,"Non-binary","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,4,2
+15,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",3,7,1,2
+18,"Male","In high school","Europe","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,3,3
+17,"Male","In college/undergraduate","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,2,2
+17,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,0
+15,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,3,1
+15,"Female","In high school","South America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,2,3
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",3,7,3,2
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,5,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",3,7,1,2
+14,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",6,4,0,1
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,1,1
+18,"Female","In high school","Asia","Never used Discord.com","I have used this, and thoroughly understand how it works",8,2,4,0
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,3,0
+18,"Male","In college/undergraduate","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,3
+19,"Female","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have heard of this before, but have not used it",4,6,2,6
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+16,"Female","In high school","North America","Never used Discord.com","I have used this, and roughly understand how it works",10,0,3,0
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,2,3
+15,"Female","In high school","North America","Never used Discord.com","I have used this, and roughly understand how it works",5,5,3,2
+16,"Female","In high school","North America","Never used Discord.com","I have used this, and roughly understand how it works",4,6,1,5
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,3,0
+14,"Male","In high school","North America","Never used Discord.com","I have used this, and thoroughly understand how it works",6,4,2,4
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+18,"Female","In college/undergraduate","North America","Never used Discord.com","I have used this, and roughly understand how it works",7,3,1,2
+15,"Female","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",6,4,4,2
+18,"Male","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",8,2,2,2
+50,"Male","In graduate school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",7,3,5,0
+16,"Non-binary","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,4,4
+18,"Male","In college/undergraduate","Europe","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,3,6
+17,"Male","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",10,0,2,0
+21,"Male","In graduate school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",6,4,3,4
+17,"Female","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",3,7,0,4
+16,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,2,3
+17,"Female","In high school","Asia","Never used Discord.com","I have used this, and roughly understand how it works",4,6,0,3
+16,"Male","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,1,5
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,3,5
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+18,"Male","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",4,6,1,4
+15,"Male","In high school","Europe","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",8,2,4,0
+17,"Male","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",10,0,6,0
+21,"Female","In college/undergraduate","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,1,2
+19,"Male","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have heard of this before, but have not used it",6,4,4,0
+17,"Female","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,2,1
+16,"Male","In high school","North America","Never used Discord.com","I have heard of this before, but have not used it",5,5,5,2
+17,"Female","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",6,4,5,3
+18,"Prefer not to say","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",7,3,5,0
+18,"Female","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,3
+15,"Prefer not to say","In college/undergraduate","North America","Never used Discord.com","I have used this before, but lack an understanding of how it works",4,6,3,1
+18,"Male","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",5,5,2,5
+23,"Male","In graduate school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",3,7,3,4
+16,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,1
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,3,0
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+17,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",8,2,4,0
+15,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,5,4
+15,"Male","In high school","Europe","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,5,1
+13,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",10,0,8,0
+14,"Female","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,0,1
+15,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have heard of this before, but have not used it",6,4,3,4
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,4,1
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",5,5,5,2
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,1,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,3,3
+16,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",5,5,4,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,2
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,4,2
+17,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+14,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",10,0,2,0
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,1,3
+14,"Female","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,0
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,4,3
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,4,3
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,6,2
+15,"Female","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",5,5,4,3
+18,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,2,5
+16,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",10,0,8,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,0,1
+15,"Prefer not to say","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+13,"Female","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,0,3
+15,"Prefer not to say","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,4
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",5,5,2,5
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,5,2
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,2,2
+17,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+16,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,1,1
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,4,3
+13,"Female","In middle school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",7,3,2,2
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",6,4,2,0
+14,"Male","In high school","North America","Never used Discord.com","I have used this before, but lack an understanding of how it works",4,6,3,3
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",3,7,0,5
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",3,7,1,5
+16,"Female","In high school","North America","Never used Discord.com","I have heard of this before, but have not used it",6,4,4,2
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,2
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,2,5
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+17,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",10,0,3,0
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",8,2,5,1
+14,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,3
+15,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",8,2,4,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,3,1
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have not heard of this before",6,4,4,2
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,2,5
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,4,0
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,4,1
+12,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,1,1
+16,"Female","In high school","Oceania","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,1,3
+16,"Female","None of the above","Africa","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,2,3
+13,"Male","In middle school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",3,7,2,6
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",3,7,1,0
+13,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",5,5,0,2
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,0,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",8,2,3,2
+16,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,3,3
+18,"Male","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,0
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",9,1,5,0
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",8,2,4,0
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,4,0
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,2,1
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",4,6,1,1
+18,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+14,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,2,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,5,3
+18,"Male","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,4,2
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,3,0
+13,"Male","In middle school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,2,0
+17,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+16,"Male","In high school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",6,4,3,1
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",3,7,1,2
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",6,4,2,3
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,4,2
+15,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",8,2,5,1
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,4,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,3,0
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",7,3,5,2
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,3
+16,"Prefer not to say","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+16,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",6,4,5,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,6,3
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,2,0
+17,"Male","In college/undergraduate","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,5,2
+17,"Female","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,0,0
+17,"Male","In college/undergraduate","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+14,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,5,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,1,4
+18,"Male","In college/undergraduate","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,0,1
+46,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",5,5,2,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,3,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,4,0
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,5,1
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",10,0,8,0
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,1,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,3,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",7,3,6,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,2,4
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,1,5
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",5,5,4,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,4,0
+18,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,5,2
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,2,2
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,3,1
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+17,"Male","In college/undergraduate","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,0,2
+14,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",3,7,1,2
+14,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+15,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,0,3
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,5,2
+14,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,5,2
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,5
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,1,1
+17,"Male","In college/undergraduate","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,0
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",5,5,4,1
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,3,1
+14,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,6,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+15,"Male","None of the above","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,3,0
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",6,4,1,2
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,4,0
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,0,4
+18,"Male","In college/undergraduate","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,4,3
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",5,5,0,3
+14,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,4,3
+21,"Male","In college/undergraduate","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,4,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+19,"Male","In college/undergraduate","Europe","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",7,3,6,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,6,3
+15,"Male","In middle school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+15,"Female","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",4,6,4,4
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",5,5,2,4
+19,"Male","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,4,1
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+17,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,4,2
+13,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,1,1
+15,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,0,4
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,2,3
+17,"Female","In college/undergraduate","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+16,"Male","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,3,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,4,0
+14,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,5,3
+19,"Male","In college/undergraduate","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,2,0
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,1
+14,"Male","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have not heard of this before",5,5,1,4
+14,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,3,4
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",3,7,1,6
+18,"Female","None of the above","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,2
+15,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,4
+18,"Male","In high school","Africa","Proficient user (uses Discord 2-4 days/week)","I have heard of this before, but have not used it",5,5,3,2
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,0
+15,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",6,4,1,2
+16,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",6,4,1,3
+18,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,0,4
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",7,3,1,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,0,1
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",8,2,6,0
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,2,2
+14,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",7,3,1,1
+15,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,3
+15,"Female","In high school","Europe","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,0,4
+14,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,1,0
+13,"Male","In middle school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,2,4
+14,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",5,5,4,1
+15,"Male","In middle school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,6,1
+80,"Male","In graduate school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,4,1
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,6,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,2
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,2
+18,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,4,4
+15,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",8,2,6,0
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,2,0
+16,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",7,3,4,1
+15,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",4,6,1,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+14,"Male","In middle school","Asia","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,3,3
+16,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+16,"Male","In elementary/primary school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,4,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",4,6,3,6
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,3
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,0
+15,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",4,6,3,3
+16,"Female","None of the above","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,3,2
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,2,4
+13,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,2,1
+15,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",3,7,2,1
+18,"Male","In college/undergraduate","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",8,2,2,1
+17,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",5,5,5,4
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,1,5
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",7,3,5,2
+17,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",9,1,7,0
+17,"Female","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,3,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,2,5
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,5,1
+17,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,2,0
+16,"Female","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",5,5,2,1
+17,"Male","In high school","Asia","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,3,3
+15,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,3
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",6,4,5,1
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,2,5
+15,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,0,2
+17,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,4,2
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",5,5,1,3
+16,"Female","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,4,3
+16,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this before, but lack an understanding of how it works",4,6,1,4
+16,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+17,"Female","In middle school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",4,6,1,1
+15,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,0,1
+16,"Female","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",7,3,5,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,4,1
+14,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",3,7,1,6
+13,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+17,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,1,3
+18,"Female","In high school","Africa","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",6,4,4,0
+17,"Non-binary","In high school","Europe","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,3,2
+15,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",6,4,4,2
+15,"Prefer not to say","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",4,6,2,5
+15,"Male","In middle school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",7,3,5,0
+15,"Male","In middle school","Asia","Frequent user (uses Discord 5-7 days/week)","I have heard of this before, but have not used it",5,5,1,0
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,2,2
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and roughly understand how it works",5,5,4,1
+15,"","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",6,4,5,3
+16,"","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",6,4,5,1
+16,"Female","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and roughly understand how it works",5,5,1,4
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",8,2,4,0
+16,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and roughly understand how it works",5,5,2,4
+14,"Male","In high school","North America","Novice (uses Discord 1-2 days/week)","I have used this, and thoroughly understand how it works",10,0,3,0
+14,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",7,3,1,1
+15,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this before, but lack an understanding of how it works",9,1,2,1
+14,"Male","In high school","Asia","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",9,1,5,0
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this, and thoroughly understand how it works",6,4,2,0
+16,"Male","In high school","North America","Proficient user (uses Discord 2-4 days/week)","I have used this before, but lack an understanding of how it works",8,2,4,0
+18,"Male","In high school","North America","Frequent user (uses Discord 5-7 days/week)","I have used this, and thoroughly understand how it works",5,5,1,4
