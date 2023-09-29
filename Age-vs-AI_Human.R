@@ -55,5 +55,6 @@ age_vs_humancorrect <- ggplot(average_values, aes(x = factor(age), y = Human_cor
 print(age_vs_humancorrect)
 
 ggsave("C:/Research/AI/actor-classification/graphs/age_vs_humancorrect_plot.jpg", plot = age_vs_humancorrect)
+write.csv(age_and_response, "tables/age-vs-response.csv", row.names = FALSE)
 
 

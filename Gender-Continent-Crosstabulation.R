@@ -24,7 +24,7 @@ human_columns <- grep("^Human", names(na_renamed_columns_data))
 human_correct_counts <- rowSums(na_renamed_columns_data[, human_columns] == "Human")
 gender_continent_tabulate$`Human_correct` <- human_correct_counts
 
-gender_continent_crosstab <- table(gender_continent_tabulate$gender, gender_continent_tabulate$continent, gender_continent_tabulate$AI_correct)
+gender_continent_crosstab <- table(gender_continent_tabulate$gender, gender_continent_tabulate$continent, gender_continent_tabulate$Human_correct)
 gender_continent_crosstab <- as.data.frame(gender_continent_crosstab)
 gender_continent_crosstab <- gender_continent_crosstab[!is.na(gender_continent_crosstab$Var1) & gender_continent_crosstab$Var1 != "" & gender_continent_crosstab$Var1 != "Prefer not to say", ]
 gender_continent_crosstab$Var3 <- as.numeric(gender_continent_crosstab$Var3)
@@ -35,3 +35,6 @@ t_test_result <- t.test(Var3 ~ Var1, data = filtered_data)
 print(t_test_result)
 fisher_result <- fisher.test(contingency_table)
 print(fisher_result)
+
+write.csv(gender_continent_crosstab, "tables/gender-and-continent-vs-response.csv", row.names = FALSE)
+
