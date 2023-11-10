@@ -159,10 +159,14 @@ human_correct_heard_percent <- paste0(round((heard_human_correct_count / heard_h
 
 contingency_table_percent <- data.frame(
   Experience = c("Used & Thoroughly Understand", "Used & Roughly Understand", "Used & Lack Understanding", "Heard of & Not Used", "Not Heard of"),
-  AI_Correct = c(ai_correct_thorough_percent, ai_correct_rough_percent, ai_correct_lack_percent, ai_correct_heard_percent, ai_correct_notheard_percent),
-  Human_Correct = c(human_correct_thorough_percent, human_correct_rough_percent, human_correct_lack_percent, human_correct_heard_percent, human_correct_notheard_percent)
+  AICorrect = c(ai_correct_thorough_percent, ai_correct_rough_percent, ai_correct_lack_percent, ai_correct_heard_percent, ai_correct_notheard_percent),
+  HumanCorrect = c(human_correct_thorough_percent, human_correct_rough_percent, human_correct_lack_percent, human_correct_heard_percent, human_correct_notheard_percent)
 )
 
+contingency_table_percent_ready <- contingency_table_percent
+
+contingency_table_percent_ready[] <- lapply(contingency_table_percent_ready, function(x) gsub("%", "\\%", x, fixed = TRUE))
+contingency_table_percent_ready$Experience <- gsub("&", "\\\\&", contingency_table_percent_ready$Experience)
 contingency_table_numerical <- data.frame(
   Experience = c("Used & Thoroughly Understand", "Used & Roughly Understand", "Used & Lack Understanding", "Heard of & Not Used"),
   AI_Correct = c(thorough_ai_correct_count, rough_ai_correct_count, lack_ai_correct_count, heard_ai_correct_count),
@@ -173,14 +177,15 @@ contingency_table_numerical <- data.frame(
 write.csv(contingency_table_percent, file = "tables/AI_Classification_Experience_Contingency_Table_Percentage.csv", row.names = TRUE)
 write.csv(contingency_table_numerical, file = "tables/AI_Classification_Experience_Contingency_Table_Numeric.csv", row.names = TRUE)
 
-
-ggplot(contingency_table_percent, aes(x = Experience, y = Human_Correct, fill = Experience)) +
+tikz("tikz/AIvsExperience", width = 6, height = 4, standAlone = TRUE)
+ggplot(contingency_table_percent_ready, aes(x = Experience, y = AICorrect, fill = Experience)) +
   geom_bar(stat = "identity") +
-  labs(title = "Correct AI Classifications by Experience Level (Human)",
-       y = "Percentage of Correct AI Classifications",
+  labs(title = "Correct AI Classifications by Experience Level (AI)",
+       y = "Percentage of Correct Classifications",
        x = "Experience with AI") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+dev.off()
 
 
 # Chi-Squared Test
@@ -250,3 +255,94 @@ print(paste("Chi-Squared Statistic:", chi_squared))
 print(paste("Degrees of Freedom:", df))
 print(paste("P-value:", p_value))
 print(result)
+
+
+# McNemar  
+contingency_input_correct <- table(cleaned_full_counts$AI_correct, cleaned_full_counts$Human_correct)
+a <- contingency_input_correct[2, 2]
+b <- contingency_input_correct[1, 2]
+c <- contingency_input_correct[2, 1]
+d <- contingency_input_correct[1, 1]
+mcnemar_statistic <- ((b - c)^2) / (b + c)
+
+# Degrees of freedom is 1 for McNemar's test
+df <- 1
+
+# Calculate p-value using chi-square distribution
+p_value <- 1 - pchisq(mcnemar_statistic, df)
+
+# Print McNemar's test statistic and p-value
+print(paste("McNemar's Test Statistic:", mcnemar_statistic))
+print(paste("Degrees of Freedom:", df))
+print(paste("P-value:", p_value))
+
+# ROC CURVE
+copy_cleaned_full_counts <- cleaned_full_counts
+copy_cleaned_full_counts$AI_percentage_correct <- (copy_cleaned_full_counts$AI_correct / 10) * 100
+copy_cleaned_full_counts$Human_percentage_correct <- (copy_cleaned_full_counts$Human_correct / 10) * 100
+roc_ai <- roc(copy_cleaned_full_counts$AI_percentage_correct, copy_cleaned_full_counts$AI_input)
+
+# Create an ROC curve for Human
+roc_human <- roc(copy_cleaned_full_counts$Human_percentage_correct, copy_cleaned_full_counts$Human_input)
+
+# Plot the ROC curves
+plot(roc_ai, col = "blue", main = "ROC Curve (Overall)", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)
+
+# ROC: Heard of but not used
+
+heardofnotused_subset_full <- copy_cleaned_full_counts[copy_cleaned_full_counts$aiexperience == "I have heard of this before, but have not used it", ]
+heardofnotused_subset_full$AI_percentage_correct <- (heardofnotused_subset_full$AI_correct / 10) * 100
+heardofnotused_subset_full$Human_percentage_correct <- (heardofnotused_subset_full$Human_correct / 10) * 100
+roc_ai <- roc(heardofnotused_subset_full$AI_percentage_correct, heardofnotused_subset_full$AI_input)
+
+# Create an ROC curve for Human
+roc_human <- roc(heardofnotused_subset_full$Human_percentage_correct, heardofnotused_subset_full$Human_input)
+
+# Plot the ROC curves
+plot(roc_ai, col = "blue", main = "ROC: Heard of but not used", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)
+# ROC: I have used this, and thoroughly understand how it works
+
+thoroughlyunderstand_subset_full <- copy_cleaned_full_counts[copy_cleaned_full_counts$aiexperience == "I have used this, and thoroughly understand how it works", ]
+thoroughlyunderstand_subset_full$AI_percentage_correct <- (thoroughlyunderstand_subset_full$AI_correct / 10) * 100
+thoroughlyunderstand_subset_full$Human_percentage_correct <- (thoroughlyunderstand_subset_full$Human_correct / 10) * 100
+roc_ai <- roc(thoroughlyunderstand_subset_full$AI_percentage_correct, thoroughlyunderstand_subset_full$AI_input)
+roc_human <- roc(thoroughlyunderstand_subset_full$Human_percentage_correct, thoroughlyunderstand_subset_full$Human_input)
+plot(roc_ai, col = "blue", main = "ROC: Used and Thoroughly Understand", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)
+
+# ROC: I have used this, and roughly understand how it works
+
+roughly_subset_full <- copy_cleaned_full_counts[copy_cleaned_full_counts$aiexperience == "I have used this, and roughly understand how it works", ]
+roughly_subset_full$AI_percentage_correct <- (roughly_subset_full$AI_correct / 10) * 100
+roughly_subset_full$Human_percentage_correct <- (roughly_subset_full$Human_correct / 10) * 100
+roc_ai <- roc(roughly_subset_full$AI_percentage_correct, roughly_subset_full$AI_input)
+roc_human <- roc(roughly_subset_full$Human_percentage_correct, roughly_subset_full$Human_input)
+plot(roc_ai, col = "blue", main = "ROC: Used & roughly understand how it works", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)
+
+# ROC: I have not heard of this before
+
+notheardof_subset_full <- copy_cleaned_full_counts[copy_cleaned_full_counts$aiexperience == "I have not heard of this before", ]
+notheardof_subset_full$AI_percentage_correct <- (notheardof_subset_full$AI_correct / 10) * 100
+notheardof_subset_full$Human_percentage_correct <- (notheardof_subset_full$Human_correct / 10) * 100
+roc_ai <- roc(notheardof_subset_full$AI_percentage_correct, notheardof_subset_full$AI_input)
+roc_human <- roc(notheardof_subset_full$Human_percentage_correct, notheardof_subset_full$Human_input)
+plot(roc_ai, col = "blue", main = "ROC: I have not heard of this before", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)
+# ROC: I have used this before, but lack an understanding of how it works
+
+lack_subset_full <- copy_cleaned_full_counts[copy_cleaned_full_counts$aiexperience == "I have used this before, but lack an understanding of how it works", ]
+lack_subset_full$AI_percentage_correct <- (lack_subset_full$AI_correct / 10) * 100
+lack_subset_full$Human_percentage_correct <- (lack_subset_full$Human_correct / 10) * 100
+roc_ai <- roc(lack_subset_full$AI_percentage_correct, lack_subset_full$AI_input)
+roc_human <- roc(lack_subset_full$Human_percentage_correct, lack_subset_full$Human_input)
+plot(roc_ai, col = "blue", main = "ROC: I have not heard of this before", sub = "AI vs. Human", col.main = "darkblue", col.sub = "darkblue")
+lines(roc_human, col = "red")
+legend("bottomright", legend = c("AI", "Human"), col = c("blue", "red"), lty = 1)

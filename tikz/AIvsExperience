@@ -1,0 +1,176 @@
+% Created by tikzDevice version 0.12.5 on 2023-10-27 10:01:27
+% !TEX encoding = UTF-8 Unicode
+\documentclass[10pt]{article}
+\usepackage{tikz}
+
+\usepackage[active,tightpage,psfixbb]{preview}
+
+\PreviewEnvironment{pgfpicture}
+
+\setlength\PreviewBorder{0pt}
+\begin{document}
+
+
+\end{document}
+}[x=1pt,y=1pt]
+\definecolor{fillColor}{RGB}{255,255,255}
+\path[use as bounding box,fill=fillColor,fill opacity=0.00] (0,0) rectangle (433.62,289.08);
+\begin{scope}
+\path[clip] ( 39.04,116.13) rectangle (262.12,266.42);
+\definecolor{drawColor}{gray}{0.92}
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] ( 39.04,148.80) --
+	(262.12,148.80);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] ( 39.04,181.47) --
+	(262.12,181.47);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] ( 39.04,214.15) --
+	(262.12,214.15);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] ( 39.04,246.82) --
+	(262.12,246.82);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] ( 64.78,116.13) --
+	( 64.78,266.42);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] (107.68,116.13) --
+	(107.68,266.42);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] (150.58,116.13) --
+	(150.58,266.42);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] (193.48,116.13) --
+	(193.48,266.42);
+
+\path[draw=drawColor,line width= 0.6pt,line join=round] (236.38,116.13) --
+	(236.38,266.42);
+\definecolor{fillColor}{RGB}{231,107,243}
+
+\path[fill=fillColor] (217.07,116.13) rectangle (255.68,214.15);
+\definecolor{fillColor}{RGB}{0,176,246}
+
+\path[fill=fillColor] (174.17,116.13) rectangle (212.78,181.47);
+\definecolor{fillColor}{RGB}{0,191,125}
+
+\path[fill=fillColor] (131.28,116.13) rectangle (169.88,246.82);
+\definecolor{fillColor}{RGB}{248,118,109}
+
+\path[fill=fillColor] ( 45.48,116.13) rectangle ( 84.09,214.15);
+\definecolor{fillColor}{RGB}{163,165,0}
+
+\path[fill=fillColor] ( 88.38,116.13) rectangle (126.99,148.80);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{gray}{0.30}
+
+\node[text=drawColor,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at ( 34.09,145.77) {45\%};
+
+\node[text=drawColor,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at ( 34.09,178.44) {47\%};
+
+\node[text=drawColor,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at ( 34.09,211.12) {49\%};
+
+\node[text=drawColor,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at ( 34.09,243.79) {50\%};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{gray}{0.30}
+
+\node[text=drawColor,rotate= 45.00,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at ( 69.07,106.89) {Heard of \& Not Used};
+
+\node[text=drawColor,rotate= 45.00,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at (111.97,106.89) {Not Heard of};
+
+\node[text=drawColor,rotate= 45.00,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at (154.87,106.89) {Used \& Lack Understanding};
+
+\node[text=drawColor,rotate= 45.00,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at (197.76,106.89) {Used \& Roughly Understand};
+
+\node[text=drawColor,rotate= 45.00,anchor=base east,inner sep=0pt, outer sep=0pt, scale=  0.88] at (240.66,106.89) {Used \& Thoroughly Understand};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base,inner sep=0pt, outer sep=0pt, scale=  1.10] at (150.58,  7.64) {Experience with AI};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,rotate= 90.00,anchor=base,inner sep=0pt, outer sep=0pt, scale=  1.10] at ( 13.08,191.27) {Percentage of Correct Classifications};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  1.10] at (278.62,226.37) {Experience};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{fillColor}{RGB}{248,118,109}
+
+\path[fill=fillColor] (279.33,206.06) rectangle (292.36,219.09);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{fillColor}{RGB}{163,165,0}
+
+\path[fill=fillColor] (279.33,191.61) rectangle (292.36,204.64);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{fillColor}{RGB}{0,191,125}
+
+\path[fill=fillColor] (279.33,177.15) rectangle (292.36,190.18);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{fillColor}{RGB}{0,176,246}
+
+\path[fill=fillColor] (279.33,162.70) rectangle (292.36,175.73);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{fillColor}{RGB}{231,107,243}
+
+\path[fill=fillColor] (279.33,148.24) rectangle (292.36,161.28);
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  0.88] at (298.57,209.55) {Heard of \& Not Used};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  0.88] at (298.57,195.09) {Not Heard of};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  0.88] at (298.57,180.64) {Used \& Lack Understanding};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  0.88] at (298.57,166.18) {Used \& Roughly Understand};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  0.88] at (298.57,151.73) {Used \& Thoroughly Understand};
+\end{scope}
+\begin{scope}
+\path[clip] (  0.00,  0.00) rectangle (433.62,289.08);
+\definecolor{drawColor}{RGB}{0,0,0}
+
+\node[text=drawColor,anchor=base west,inner sep=0pt, outer sep=0pt, scale=  1.32] at ( 39.04,274.49) {Correct AI Classifications by Experience Level (AI)};
+\end{scope}
+\end{tikzpicture}
+
+\end{document}
